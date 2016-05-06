@@ -6,6 +6,8 @@
   <base href="/">
   {{content-for 'head'}}
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Service worker support is disabled by default.
@@ -22,11 +24,12 @@
 </head>
 <body>
   <ngconf-tweets-app>Loading...</ngconf-tweets-app>
-
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="vendor/es6-shim/es6-shim.js"></script>
   <script src="vendor/reflect-metadata/Reflect.js"></script>
   <script src="vendor/systemjs/dist/system.src.js"></script>
   <script src="vendor/zone.js/dist/zone.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
 
   <script>
     System.import('system-config.js').then(function () {

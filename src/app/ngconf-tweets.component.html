@@ -1,3 +1,10 @@
 <h1>
   {{title}}
 </h1>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let tweet of tweets" class="col s4">
+      <tweet [tweetData]='tweet'></tweet>
+    </div>
+  </div>
+</div>
